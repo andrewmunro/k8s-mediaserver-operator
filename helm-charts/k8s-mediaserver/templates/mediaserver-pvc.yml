@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.general.storage.pvcName }}
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.general.storage.size }}
